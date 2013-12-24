@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated May 18, 2013 11:05:00 PM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="user.Userreg" table="userreg" catalog="rao">
+        <id name="eid" type="java.lang.Integer">
+            <column name="eid" />
+            <generator class="identity" />
+        </id>
+        <property name="ename" type="string">
+            <column name="ename" length="20" />
+        </property>
+        <property name="password" type="string">
+            <column name="password" length="20" />
+        </property>
+    </class>
+</hibernate-mapping>
